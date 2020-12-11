@@ -42,6 +42,6 @@ def cliente():
 
 while True:
     con, ip = tcpServidor.accept()
-    print('Concetado por ', ip)
+    print('Conectado por ', ip)
     Thread(target=conexao, args=(con, ip)).start()
     Thread(target=cliente).start()
